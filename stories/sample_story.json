@@ -1,0 +1,77 @@
+{
+  "title": "봄날의 고백",
+  "opening_scene": "school_gate",
+  "characters": [
+    {"name": "민준", "description": "밝고 성실한 주인공"},
+    {"name": "하린", "description": "주인공의 소꿉친구"},
+    {"name": "유나", "description": "전학생"}
+  ],
+  "scenes": [
+    {
+      "id": "school_gate",
+      "description": "아침, 학교 정문 앞",
+      "dialogues": [
+        {"speaker": "민준", "text": "오늘은 무슨 일이 벌어질까?"},
+        {"speaker": "하린", "text": "민준아, 같이 들어가자!"},
+        {"speaker": "민준", "text": "그래, 하린아."}
+      ],
+      "choices": [
+        {"text": "하린과 함께 교실로 간다", "next_scene": "classroom"},
+        {"text": "홀로 운동장을 산책한다", "next_scene": "playground"}
+      ]
+    },
+    {
+      "id": "classroom",
+      "description": "조용한 교실",
+      "dialogues": [
+        {"speaker": "하린", "text": "오늘 수업 끝나고 뭐해?"},
+        {"speaker": "민준", "text": "특별한 계획은 없는데..."},
+        {"speaker": "하린", "text": "그럼 나랑 저녁 먹으러 갈래?"}
+      ],
+      "choices": [
+        {"text": "하린의 제안을 수락한다", "next_scene": "date_with_harin"},
+        {"text": "미안하지만 거절한다", "next_scene": "lonely_evening"}
+      ]
+    },
+    {
+      "id": "playground",
+      "description": "운동장 한켠",
+      "dialogues": [
+        {"speaker": "민준", "text": "바람이 시원하네."},
+        {"speaker": "유나", "text": "혹시 2학년 3반 맞죠? 저는 전학생 유나예요."},
+        {"speaker": "민준", "text": "아! 만나서 반가워."}
+      ],
+      "choices": [
+        {"text": "유나와 학교를 둘러본다", "next_scene": "tour_with_yuna"},
+        {"text": "서둘러 교실로 돌아간다", "next_scene": "classroom"}
+      ]
+    },
+    {
+      "id": "date_with_harin",
+      "description": "저녁, 조용한 카페",
+      "dialogues": [
+        {"speaker": "하린", "text": "너랑 있으면 마음이 편해."},
+        {"speaker": "민준", "text": "나도 그래, 하린아."},
+        {"speaker": "하린", "text": "우리의 시간은 이제부터야."}
+      ],
+      "next_scene": null
+    },
+    {
+      "id": "tour_with_yuna",
+      "description": "교정 곳곳을 둘러보는 시간",
+      "dialogues": [
+        {"speaker": "유나", "text": "친절하게 안내해줘서 고마워요."},
+        {"speaker": "민준", "text": "앞으로도 잘 부탁해."}
+      ],
+      "next_scene": null
+    },
+    {
+      "id": "lonely_evening",
+      "description": "집으로 돌아가는 길",
+      "dialogues": [
+        {"speaker": "민준", "text": "왠지 외로운 저녁이 될 것 같아."}
+      ],
+      "next_scene": null
+    }
+  ]
+}
